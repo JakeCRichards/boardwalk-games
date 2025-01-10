@@ -1,18 +1,18 @@
-/* Google Font Family - Inter and Macondo */
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Macondo&display=swap');
+/* Google fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Macondo&display=swap');
 
 /* CSS Variables */
 :root {
     --primary-font: "Inter", sans-serif;
     --secondary-font: "Macondo", cursive;
-    --primary-color: #3a2620;
-    /* brown */
-    --secondary-color: #aa9581;
-    --highlight-color: #416a8e;
-    --highlight-color-light: #7a9fc2;
+    --primary-color: #3a2620; /* dark brown */
+    --secondary-color: #aa9581; /* light brown */
+    --highlight-color: #416a8e; /* blue */
+    --highlight-color-light: #7a9fc2; /* light blue */
 }
 
 /* Global styles */
+
 body {
     font-family: var(--primary-font);
 }
@@ -22,27 +22,24 @@ h2,
 h3 {
     font-family: var(--secondary-font);
     color: var(--primary-color);
-    text-transform: uppercase;
 }
 
 h1,
-h2,
-    {
+h2 {
     text-transform: uppercase;
 }
-
 
 h2 {
     margin-bottom: 2rem;
 }
 
+.sub-heading-color {
+    color: var(--highlight-color);
+}
+
 .section {
     margin-top: 2rem;
     margin-bottom: 2rem;
-}
-
-.sub-heading-color {
-    color: var(--highlight-color);
 }
 
 /* Navbar */
@@ -56,11 +53,13 @@ h2 {
 }
 
 /* Header */
+
 #header .lead {
     font-family: var(--secondary-font);
 }
 
 /* Services */
+
 #services .card-footer {
     font-weight: bold;
     color: var(--highlight-color);
@@ -110,6 +109,10 @@ h2 {
     color: var(--secondary-color);
 }
 
+#contact .table-dark * {
+    background-color: transparent;
+}
+
 /* grid visualisation CSS for testing */
 
 /* .container,
@@ -120,10 +123,9 @@ h2 {
 .col-12 {
     border: 2px solid white;
     background-color: lightgray;
-} */s
+} */
 
 /* Media queries */
-
 
 /* Medium devices (tablets, 768px and up) */
 @media screen and (min-width: 768px) {
